@@ -1,0 +1,63 @@
+; Packaging information for base
+name = "SMC Base Profile"
+description = "Basic SMC Installation"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Administration
+dependencies[] = admin_devel
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+; Analytics
+dependencies[] = analytics_google
+; Chaos tool suite
+dependencies[] = ctools
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+; Entityforms
+dependencies[] = entityform
+; Fields
+dependencies[] = email
+dependencies[] = phone
+; Other
+dependencies[] = entity
+dependencies[] = libraries
+dependencies[] = mollom
+dependencies[] = pathauto
+dependencies[] = token
+; Views
+dependencies[] = views
+; Features
+dependencies[] = features
+dependencies[] = jquery_update
+
