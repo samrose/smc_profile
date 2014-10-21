@@ -60,4 +60,5 @@ dependencies[] = views
 ; Features
 dependencies[] = features
 dependencies[] = jquery_update
-
+;Profile Installation Specific Files
+files[] = smc.profile

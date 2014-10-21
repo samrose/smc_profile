@@ -4,7 +4,7 @@
  *
  * Perform actions to set up the site for this profile.
  */
-function base_install() {
+function smc_install() {
     $filtered_html_format = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
@@ -78,11 +78,19 @@ function base_install() {
     ->condition('type', 'theme')
     ->condition('name', $admin_theme)
     ->execute();
-  variable_set('theme_default', $default_theme);
-  theme_enable(array($default_theme));
-  variable_set('admin_theme', $admin_theme);
+  $enable = array(
+    'theme_default' => 'smc_base',
+    'admin_theme' => 'seven',
+  );
+  theme_enable($enable);
+   foreach ($enable as $var => $theme) {
+     if (!is_numeric($var)) {
+       variable_set($var, $theme);
+     }
+   }
   // activate admin theme when editing a node
   variable_set('node_admin_theme', '1');
+  variable_get('theme_default', 'smc_base');
   theme_disable(array('bartik'));
   $blocks = array(
     array(
