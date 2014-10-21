@@ -83,6 +83,7 @@ function base_install() {
   variable_set('admin_theme', $admin_theme);
   // activate admin theme when editing a node
   variable_set('node_admin_theme', '1');
+  theme_disable(array('bartik'));
   $blocks = array(
     array(
       'module' => 'system',
