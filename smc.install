@@ -59,7 +59,6 @@ function base_install() {
   );
   $full_html_format = (object) $full_html_format;
   filter_format_save($full_html_format);
-  // Enable some ofw_base blocks.
   $default_theme = 'smc_base';
   $admin_theme = 'seven';
   // disable all themes
