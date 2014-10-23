@@ -93,6 +93,10 @@ function smc_install() {
       'SpecialChar' => 1,
       'Table' => 1,
     ),
+    'drupal_path' => 
+    array (
+      'Link' => 1,
+    ),
   ),
   'toolbar_loc' => 'top',
   'toolbar_align' => 'left',

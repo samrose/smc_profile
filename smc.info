@@ -52,6 +52,7 @@ dependencies[] = entityform
 dependencies[] = email
 dependencies[] = phone
 ; Other
+dependencies[] = ckeditor_link
 dependencies[] = entity
 dependencies[] = imce
 dependencies[] = libraries
