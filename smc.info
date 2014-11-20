@@ -40,6 +40,7 @@ dependencies[] = search
 dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = tagadelic
+dependencies[] = tagadelic_taxonomy
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = update
