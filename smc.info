@@ -39,6 +39,7 @@ dependencies[] = rdf
 dependencies[] = search
 dependencies[] = shortcut
 dependencies[] = system
+dependencies[] = tagadelic
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = update
