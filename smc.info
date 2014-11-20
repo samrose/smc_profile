@@ -68,7 +68,9 @@ dependencies[] = views_ui
 ; Features
 dependencies[] = features
 dependencies[] = features_extra
+dependencies[] = smc_blog_feature
 
+;jQuery
 dependencies[] = jquery_update
 ;Profile Installation Specific Files
 files[] = smc.profile
