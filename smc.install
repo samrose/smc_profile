@@ -203,6 +203,17 @@ function smc_install() {
       'pages' => '',
       'cache' => -1,
     ),
+    array( 
+      'module' => 'smc_blog_feature',  
+      'delta' => 'recent_comments', 
+      'theme' => $default_theme,  
+      'status' => 1,  
+      'weight' => 0, 
+      'region' => 'sidebar_first',  
+    'pages' => "blog-posts\nblog-tags/*",  
+    'cache' => 0,  
+    'visibility' => BLOCK_VISIBILITY_LISTED
+),
   );
   // drop system / user blocks to ensure correct building
   db_delete('block')->condition('module', 'system')->execute();
@@ -243,9 +254,9 @@ function smc_install() {
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
-    'smc_blog_feature'
+    ''
   );
-  features_revert($features);
+  //features_revert($features);
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
