@@ -243,7 +243,7 @@ function smc_install() {
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
-    ''
+    'smc_blog_feature'
   );
   features_revert($features);
   // ignore any rebuild messages
