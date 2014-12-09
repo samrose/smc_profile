@@ -213,16 +213,16 @@ function smc_install() {
     'pages' => "blog-posts\nblog-tags/*",  
     'cache' => -1,  
    ),
-    /*array( 
+    array( 
       'module' => 'tagadelic_taxonomy',  
       'delta' => 'tagadelic_taxonomy', 
       'theme' => $default_theme,  
       'status' => 1,  
       'weight' => 0, 
-      'region' => 'sidebar_second',  
+      'region' => 'sidebar_first',  
     'pages' => "blog-posts\nblog-tags/*",  
     'cache' => -1,  
-   ),*/
+   ),
   );
   // drop system / user blocks to ensure correct building
   db_delete('block')->condition('module', 'system')->execute();
