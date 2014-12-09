@@ -205,15 +205,14 @@ function smc_install() {
     ),
     array( 
       'module' => 'smc_blog_feature',  
-      'delta' => 'recent_comments', 
+      'delta' => 'recent_comments-block', 
       'theme' => $default_theme,  
       'status' => 1,  
       'weight' => 0, 
       'region' => 'sidebar_first',  
     'pages' => "blog-posts\nblog-tags/*",  
-    'cache' => 0,  
-    //'visibility' => BLOCK_VISIBILITY_LISTED
-),
+    'cache' => -1,  
+   ),
   );
   // drop system / user blocks to ensure correct building
   db_delete('block')->condition('module', 'system')->execute();
