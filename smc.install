@@ -213,6 +213,16 @@ function smc_install() {
     'pages' => "blog-posts\nblog-tags/*",  
     'cache' => -1,  
    ),
+    array( 
+      'module' => 'views',  
+      'delta' => 'blog_posts-block', 
+      'theme' => $default_theme,  
+      'status' => 1,  
+      'weight' => 0, 
+      'region' => 'sidebar_first',  
+    'pages' => "blog-posts\nblog-tags/*",  
+    'cache' => -1,  
+   ),
     /*array( 
       'module' => 'tagadelic_taxonomy',  
       //'delta' => 'tagadelic_taxonomy', 
