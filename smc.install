@@ -215,7 +215,7 @@ function smc_install() {
    ),
     array( 
       'module' => 'tagadelic_taxonomy',  
-      'delta' => 'tagadelic_taxonomy', 
+      //'delta' => 'tagadelic_taxonomy', 
       'theme' => $default_theme,  
       'status' => 1,  
       'weight' => 0, 
