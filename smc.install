@@ -203,7 +203,7 @@ function smc_install() {
       'pages' => '',
       'cache' => -1,
     ),
-    array( 
+    /*array( 
       'module' => 'views',  
       'delta' => 'recent_comments-block', 
       'theme' => $default_theme,  
@@ -224,7 +224,7 @@ function smc_install() {
     'pages' => "blog-posts\nblog-tags/*",  
     'cache' => -1, 
     'visibility' => 1, 
-   ),
+   ),*/
     /*array( 
       'module' => 'tagadelic_taxonomy',  
       //'delta' => 'tagadelic_taxonomy', 
@@ -275,9 +275,9 @@ function smc_install() {
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
-    ''
+    'smc_blog_feature'
   );
-  //features_revert($features);
+  features_revert($features);
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
