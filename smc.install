@@ -212,6 +212,7 @@ function smc_install() {
       'region' => 'sidebar_first',  
     'pages' => "blog-posts\nblog-tags/*",  
     'cache' => -1,  
+    'visibility' => BLOCK_VISIBILITY_LISTED,
    ),
     array( 
       'module' => 'views',  
@@ -221,7 +222,8 @@ function smc_install() {
       'weight' => 0, 
       'region' => 'sidebar_first',  
     'pages' => "blog-posts\nblog-tags/*",  
-    'cache' => -1,  
+    'cache' => -1, 
+    'visibility' => BLOCK_VISIBILITY_LISTED, 
    ),
     /*array( 
       'module' => 'tagadelic_taxonomy',  
