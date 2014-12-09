@@ -273,7 +273,7 @@ function smc_install() {
     ->execute();
   // Update the menu router information.
   menu_rebuild();
-  fe_block_settings_features_revert('smc_blog_feature');
+  //fe_block_settings_features_revert('smc_blog_feature');
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
