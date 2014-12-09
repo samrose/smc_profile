@@ -22,3 +22,13 @@ if (!function_exists("system_form_install_select_profile_form_alter")) {
     }
   }
 }
+
+/**
+ * Implementation of hook_profile_final()
+ *
+ */
+function smc_profile_final() {
+  variable_set('user_pictures', 1);
+  features_revert();
+
+}
