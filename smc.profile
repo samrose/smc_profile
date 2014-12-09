@@ -22,8 +22,3 @@ if (!function_exists("system_form_install_select_profile_form_alter")) {
     }
   }
 }
-/**
- * Rebuild & Revert all enabled features.
- */
-features_rebuild();
-features_revert();

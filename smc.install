@@ -277,7 +277,12 @@ function smc_install() {
   /*$features = array(
     'smc_blog_feature.fe_block_settings'
   );
-  features_revert($features);8?
+  features_revert($features);*/
+  /**
+  * Rebuild & Revert all enabled features.
+  */
+  features_rebuild();
+  features_revert();
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
