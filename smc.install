@@ -204,7 +204,7 @@ function smc_install() {
       'cache' => -1,
     ),
     array( 
-      'module' => 'smc_blog_feature',  
+      'module' => 'views',  
       'delta' => 'recent_comments-block', 
       'theme' => $default_theme,  
       'status' => 1,  
