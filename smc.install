@@ -246,8 +246,9 @@ function smc_install() {
     'menu_name' => 'main-menu',
   );
   menu_link_save($item_forum);
+  menu_rebuild();
   $item_wiki = array(
-    'link_title' => st('wiki'),
+    'link_title' => st('Wiki'),
     'link_path' => 'wiki-recent-changes',
     'menu_name' => 'main-menu',
   );
