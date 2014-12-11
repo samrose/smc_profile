@@ -240,12 +240,18 @@ function smc_install() {
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
   // Update the menu router information.
-  $item = array(
+  $item_forum = array(
     'link_title' => st('Forum'),
     'link_path' => 'forum',
     'menu_name' => 'main-menu',
   );
-  menu_link_save($item);
+  menu_link_save($item_forum);
+  $item_wiki = array(
+    'link_title' => st('wiki'),
+    'link_path' => 'wiki-recent-changes',
+    'menu_name' => 'main-menu',
+  );
+  menu_link_save($item_wiki);
   menu_rebuild();
   variable_set('user_pictures', 1);
   //fe_block_settings_features_revert('smc_blog_feature');
