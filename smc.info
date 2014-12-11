@@ -69,7 +69,7 @@ dependencies[] = views_ui
 dependencies[] = features
 dependencies[] = fe_block
 dependencies[] = smc_blog_feature
-dependencies[] = smc_wiki_feature
+;dependencies[] = smc_wiki_feature
 
 ;jQuery
 dependencies[] = jquery_update
