@@ -247,13 +247,6 @@ function smc_install() {
   );
   menu_link_save($item_forum);
   menu_rebuild();
-  $item_wiki = array(
-    'link_title' => st('Wiki'),
-    'link_path' => 'wiki-recent-changes',
-    'menu_name' => 'main-menu',
-  );
-  menu_link_save($item_wiki);
-  menu_rebuild();
   variable_set('user_pictures', 1);
   //fe_block_settings_features_revert('smc_blog_feature');
   // ignore any rebuild messages
