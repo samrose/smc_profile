@@ -248,6 +248,7 @@ function smc_install() {
   menu_link_save($item_forum);
   menu_rebuild();
   variable_set('user_pictures', 1);
+  variable_set('wikitools_node_types', "wiki_pages"); 
   //fe_block_settings_features_revert('smc_blog_feature');
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
