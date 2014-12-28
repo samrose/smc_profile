@@ -41,10 +41,12 @@ dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = tagadelic
 dependencies[] = tagadelic_taxonomy
+dependencies[] = talk
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = update
 dependencies[] = user
+dependencies[] = wikitools
 ; Date/Time
 dependencies[] = date
 dependencies[] = date_api
