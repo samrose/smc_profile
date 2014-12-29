@@ -253,6 +253,7 @@ function smc_install() {
     'forum' => 0);
   variable_set(wikitools_node_types, $types);
   variable_set(comment_talk_wiki_page, 1);
+  $node = array();
   $node = (object) $node;
   $node->uid = $account ? $account->uid : 1;
   $node->field_title[0] = 'Main Page';
