@@ -251,7 +251,7 @@ function smc_install() {
   $types = array('[wiki_page]' => 'wiki_page',
     '[blog_post]' => 0
     '[forum]' => 0);
-  variable_set(wikitools_node_types, serialize($types)); 
+  variable_set(wikitools_node_types, $types); 
   //fe_block_settings_features_revert('smc_blog_feature');
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
