@@ -252,7 +252,12 @@ function smc_install() {
     'blog_post' => 0,
     'forum' => 0);
   variable_set(wikitools_node_types, $types);
-  variable_set(comment_talk_wiki_page, 1); 
+  variable_set(comment_talk_wiki_page, 1);
+  $node = (object) $node;
+  $node->uid = $account ? $account->uid : 1;
+  $node->field_title[0] = 'Main Page';
+  $node->field_body[0] =  'Welcome to Social Media Classroom Wiki!';
+  node_save($node);
   //fe_block_settings_features_revert('smc_blog_feature');
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
