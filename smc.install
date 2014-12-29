@@ -253,12 +253,20 @@ function smc_install() {
     'forum' => 0);
   variable_set(wikitools_node_types, $types);
   variable_set(comment_talk_wiki_page, 1);
-  $node = array();
-  $node = (object) $node;
-  $node->uid = $account ? $account->uid : 1;
-  $node->field_title[0] = 'Main Page';
-  $node->field_body[0] =  'Welcome to Social Media Classroom Wiki!';
-  node_save($node);
+  $values = array(
+    'type' => 'wiki_page',
+    'uid' => 1,
+    'status' => 1,
+    'comment' => 1,
+    'promote' => 0,
+  ); 
+  $entity = entity_create('node', $values);
+  $ewrapper = entity_metadata_wrapper('node', $entity);
+  $ewrapper->title->set('Main Page');
+  $my_body_content = 'Welcome to Social Media Classroom Wiki!';
+  $ewrapper->body->set(array('value' => $my_body_content));
+  $ewrapper->body->summary->set('Welcome to Social Media Classroom Wiki!');
+  $ewrapper->save(); 
   //fe_block_settings_features_revert('smc_blog_feature');
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
