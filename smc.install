@@ -252,6 +252,11 @@ function smc_install() {
     'blog_post' => 0,
     'forum' => 0);
   variable_set(wikitools_node_types, $types);
+  $vocabularies = array(
+   "2" => 2,
+   "1" => 0
+  );
+  variable_set(tagadelic_taxonomy_vocabularies, $vocabularies); 
   variable_set(comment_talk_wiki_page, 1);
   $values = array(
     'type' => 'wiki_page',
