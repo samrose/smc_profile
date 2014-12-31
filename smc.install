@@ -258,6 +258,7 @@ function smc_install() {
   );
   variable_set(tagadelic_taxonomy_vocabularies, $vocabularies); 
   variable_set(comment_talk_wiki_page, 1);
+  variable_set(site_frontpage, "syllabus");
   $values = array(
     'type' => 'wiki_page',
     'uid' => 1,
