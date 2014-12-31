@@ -39,6 +39,7 @@ dependencies[] = path
 dependencies[] = prepopulate
 dependencies[] = quickpost_bookmarklet
 dependencies[] = rdf
+dependencies[] = smc_util
 dependencies[] = search
 dependencies[] = shortcut
 dependencies[] = system
