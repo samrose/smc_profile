@@ -64,6 +64,7 @@ dependencies[] = phone
 dependencies[] = ckeditor_link
 dependencies[] = entity
 dependencies[] = imce
+dependencies[] = imce_wysiwyg
 dependencies[] = libraries
 dependencies[] = mollom
 dependencies[] = pathauto
