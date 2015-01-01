@@ -253,6 +253,7 @@ function smc_install() {
     'forum' => 0);
   variable_set(wikitools_node_types, $types);
   $vocabularies = array(
+   "3" => 0,
    "2" => 2,
    "1" => 0
   );
