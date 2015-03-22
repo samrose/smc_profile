@@ -36,6 +36,7 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = overlay
 dependencies[] = path
+dependencies[] = profile2
 dependencies[] = prepopulate
 dependencies[] = quickpost_bookmarklet
 dependencies[] = rdf
