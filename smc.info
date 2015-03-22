@@ -36,7 +36,6 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = overlay
 dependencies[] = path
-dependencies[] = pcp
 dependencies[] = profile2
 dependencies[] = prepopulate
 dependencies[] = quickpost_bookmarklet
