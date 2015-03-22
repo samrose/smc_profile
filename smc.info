@@ -31,6 +31,7 @@ dependencies[] = image
 dependencies[] = link
 dependencies[] = list
 dependencies[] = menu
+dependencies[] = name
 dependencies[] = node
 dependencies[] = number
 dependencies[] = options
