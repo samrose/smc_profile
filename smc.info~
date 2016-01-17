@@ -80,7 +80,6 @@ dependencies[] = features
 dependencies[] = fe_block
 dependencies[] = smc_blog_feature
 dependencies[] = smc_bookmark_feature
-dependencies[] = smc_eportfolio
 dependencies[] = smc_mindmap_feature
 dependencies[] = smc_profile_feature
 dependencies[] = smc_syllabus_feature
