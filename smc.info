@@ -11,7 +11,7 @@ dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 ; Analytics
 dependencies[] = analytics_google
-dependencies[] = advanced_forum
+;dependencies[] = advanced_forum
 dependencies[] = author_pane
 ; Chaos tool suite
 dependencies[] = ctools
@@ -81,7 +81,7 @@ dependencies[] = fe_block
 dependencies[] = smc_blog_feature
 dependencies[] = smc_bookmark_feature
 dependencies[] = smc_eportfolio_feature
-dependencies[] = smc_mindmap_feature
+;dependencies[] = smc_mindmap_feature
 dependencies[] = smc_profile_feature
 dependencies[] = smc_syllabus_feature
 dependencies[] = smc_wiki_feature
