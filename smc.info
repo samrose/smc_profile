@@ -11,8 +11,6 @@ dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 ; Analytics
 dependencies[] = analytics_google
-;dependencies[] = advanced_forum
-dependencies[] = author_pane
 ; Chaos tool suite
 dependencies[] = ctools
 ; Core
